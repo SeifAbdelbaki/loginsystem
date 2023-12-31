@@ -96,10 +96,10 @@ function login() {
         if (signUpArray[i].email.toLowerCase() == email.toLowerCase() && signUpArray[i].password.toLowerCase() == password.toLowerCase()) {
             localStorage.setItem('sessionUsername', signUpArray[i].name)
             if (baseURL == '/') {
-                location.replace('https://' + location.hostname + '/welcome.html')
+                location.replace('https://' + location.hostname + '/Welcome.html')
 
             } else {
-                location.replace(baseURL + '/welcome.html')
+                location.replace(baseURL + '/Welcome.html')
 
             }
         } else {
